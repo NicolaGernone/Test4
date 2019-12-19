@@ -18,7 +18,8 @@ Calcualdora
  - He tenido que revisar los paths de los servicios y añadir unas dependencias para que se lanze el tomcat en local y se pueda ver la        pagina.
  - Monto los test unitarios para los servicios.
  - Utilizo junit5.
-
+ - antes de empezar con los test lanzo el programa para ver si compila.
+ - He tenido que reorganizar las clases porque no eran a la altura estructural adeguada para que los servicios del control mapearan bien      el path a la pagina web.
  
  
  
