@@ -30,5 +30,25 @@ public class OperationServices extends TracerImpl {
 			return sum;
 		}
     }
+	
+	/**
+	 * servicio que devuelve la resta de dos valores
+	 * @param model
+	 * @return
+	 */
+	public double subtr(OperationModel model){
+        try {
+        	trace("La primera variable introducida es: " + model.getA());
+        	trace("La segunda variable introducida es: " + model.getB());
+        	rest = model.getA() - model.getB();
+        	trace("La resta de los valores es: " + rest);
+			return rest;
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			trace(e);
+			trace("Se han itroducido valores incorrectos");
+			return rest;
+		}
+    }
 
 }
