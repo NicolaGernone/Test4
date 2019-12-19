@@ -13,6 +13,9 @@ Calcualdora
  - Mismo caso con la resta. No he visto necesario añadir ninguna particularidad a las operaciones.
  - He añadido vario trace para tener cuenta de los datos que se introducen y si hai excepciones tener costanciade del error.
  - Creo el controller donde se llaman los servicios.
+ - He desarrollado una pequeña interface para la calculadora en html ue he conectado a los servicios en el controller connectandola a los    microservicios para que funcione y ver el resultado.
+ - En el OperationController he mapeado los dos microservicios y la pagina html.
+
  
  
  
