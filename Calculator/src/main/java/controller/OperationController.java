@@ -24,10 +24,9 @@ public class OperationController extends TracerImpl{
 	 * @param model
 	 * @return
 	 */
-	@RequestMapping("/")
+	@RequestMapping("/calculator")
     private String getCalculatorPage(Model model){
         model.addAttribute("operationModel",modelBean);
-        trace(model);
         return "calculator";
 	}
 	
@@ -37,7 +36,7 @@ public class OperationController extends TracerImpl{
 	 * @param model
 	 * @return
 	 */
-	@RequestMapping(value="/", params="add", method = RequestMethod.POST)
+	@RequestMapping(value="/calculator", params="add", method = RequestMethod.POST)
     private String add(@ModelAttribute("operationModel")  OperationModel modelBean, Model model ){
         model.addAttribute("result", operationServices.add(modelBean));
         return "calculator";
@@ -49,10 +48,10 @@ public class OperationController extends TracerImpl{
 	 * @param model
 	 * @return
 	 */
-    @RequestMapping(value="/", params="subtract", method = RequestMethod.POST)
+    @RequestMapping(value="/calculator", params="subtract", method = RequestMethod.POST)
     private String subtract(@ModelAttribute("operationBean")  OperationModel modelBean, Model model ){
         model.addAttribute("result", operationServices.subtr(modelBean));
-        return "calculadora";
+        return "calculator";
     }
 	
 
