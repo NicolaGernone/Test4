@@ -1,15 +1,15 @@
-package services;
+package com.prueba.calculator;
 
 import org.springframework.stereotype.Service;
+
 import io.corp.calculator.TracerImpl;
-import model.OperationModel;
 
 @Service
 public class OperationServices extends TracerImpl {
 	
 	//declaro las variables de suma y resta
-	private double sum = 0.00;
-	private double rest = 0.00;
+	private double sum;
+	private double rest;
 	
 	/**
 	 * servicio que devuelve la suma de dos valores

@@ -1,4 +1,4 @@
-package controller;
+package com.prueba.calculator;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -7,8 +7,6 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import io.corp.calculator.TracerImpl;
-import model.OperationModel;
-import services.OperationServices;
 
 @Controller
 public class OperationController extends TracerImpl{
@@ -20,7 +18,7 @@ public class OperationController extends TracerImpl{
 	private OperationServices operationServices;
 	
 	/**
-	 * map del xml para la interface de la calculadora
+	 * map del html para la interface de la calculadora
 	 * @param model
 	 * @return
 	 */
