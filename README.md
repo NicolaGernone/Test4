@@ -13,8 +13,11 @@ Calcualdora
  - Mismo caso con la resta. No he visto necesario añadir ninguna particularidad a las operaciones.
  - He añadido vario trace para tener cuenta de los datos que se introducen y si hai excepciones tener costanciade del error.
  - Creo el controller donde se llaman los servicios.
- - He desarrollado una pequeña interface para la calculadora en html ue he conectado a los servicios en el controller connectandola a los    microservicios para que funcione y ver el resultado.
- - En el OperationController he mapeado los dos microservicios y la pagina html.
+ - Los servicios sera de tipo POST enviando datos de suma y resta segun la elección.
+ - He desarrollado una pequeña interface con spring boot thymeleaf para la calculadora en html que he conectado a los servicios en el        controller.
+ - He tenido que revisar los paths de los servicios y añadir unas dependencias para que se lanze el tomcat en local y se pueda ver la        pagina.
+ - Monto los test unitarios para los servicios.
+ - Utilizo junit5.
 
  
  
