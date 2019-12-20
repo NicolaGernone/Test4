@@ -2,7 +2,7 @@
 Calcualdora
 
 Segun requerimiento el objeto que voy a crear para las operaciones va a ser bastante sensillo, solo se nesecitarian dos servicios de suma y resta basicos, por eso no veo la necesidad de utilizar librerias de java 8. Si hubieran sido operaciones mas complejas con listas de datos y con operaciones concatenadas habria sido util mapear y utilizar stream para reducir lineas de codigo y agilizar calculos.
-El objeto servicios sera lo que se comunicará con la clase controller quese ocupará de reindirizarlos, y serian de tipo POST porque no recogen datos, solo envian el dato reuqerido segun la operacion en input operación.
+El objeto servicios sera lo que se comunicará con la clase controller quese ocupará de reindirizarlos, y serian de tipo POST se les pasa un inout y envia los datos procesados a la pagina, solo se envia el dato reuqerido segun la operacion en input operación.
 El Model de las operaciones será lo que mapea los input de la calculadora y lo despensa a los servicios y al controller.
 
  - He creado el repositorio en GitHub con Nombre Test4 y lo he clonado.
